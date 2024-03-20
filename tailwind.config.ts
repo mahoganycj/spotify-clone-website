@@ -29,12 +29,28 @@ const config: Config = {
         primary: "#65D36E",
         secondary01: "#000",
         secondary02: "#121212",
-        secondary03: "##fff",
+        secondary03: "##ffffff",
         neutral01: "#B2B2B2",
         neutral02: "#777777",
         neutral03: "#535353",
         anothablack: "#181818",
       },
+      screens: {
+        'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+      }
     },
   },
   plugins: [],

@@ -29,7 +29,7 @@ const config: Config = {
         primary: "#65D36E",
         secondary01: "#000",
         secondary02: "#121212",
-        secondary03: "##fff",
+        secondary03: "##ffffff",
         neutral01: "#B2B2B2",
         neutral02: "#777777",
         neutral03: "#535353",

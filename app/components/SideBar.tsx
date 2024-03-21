@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import SideMenu from "./SideMenu";
 import { SideLibrary } from "./SideLibrary";
 
-const [minWidth, maxWidth, defaultWidth] = [275, 425, 350];
+const [minWidth, maxWidth, defaultWidth] = [295, 425, 300];
 
 const Sidebar = () => {
   const [width, setWidth] = useState(defaultWidth);

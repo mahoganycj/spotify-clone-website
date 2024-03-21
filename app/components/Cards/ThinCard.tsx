@@ -26,7 +26,6 @@ const ThinCard: React.FC<ThinCardProps> = ({
         relative 
         group 
         flex 
-        flex-shrink
         items-center 
         rounded-md 
         overflow-hidden 
@@ -34,8 +33,8 @@ const ThinCard: React.FC<ThinCardProps> = ({
         bg-neutral-100/10 
         cursor-pointer 
         hover:bg-neutral-100/20 
-        transition
-        w-[259px]
+        transition 
+        w-[268px]
         h-[48px]
       "
     >
@@ -56,19 +55,20 @@ const ThinCard: React.FC<ThinCardProps> = ({
           transition 
           opacity-0 
           rounded-full 
-          flex
-          items-center
-          justify-center
+          flex 
+          items-center 
+          justify-center 
+          justify-items-end
           bg-green-500 
-          p-2 
-          drop-shadow-xl
-          right-3
+          p-4 
+          drop-shadow-md 
+          right-5
           group-hover:opacity-100 
           hover:scale-110
           ml-72
         "
       >
-        <FaPlay className="text-black " size={12}/>
+        <FaPlay className="text-black" />
       </div>
     </button>
    );

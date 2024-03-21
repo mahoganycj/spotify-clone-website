@@ -8,9 +8,9 @@ export type Song ={
    
 export const data : Song[] = [
     {
-        image : "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebef138aa4569dba63ee549997/2/en/default",
-        title :"Cavetown Mix ",
-        artist :"Sir Chloe, The walters and moriondo",
+        image : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+        title :"Leaves",
+        artist :"Ben&Ben",
         id : 1,
     },
     {
@@ -20,40 +20,28 @@ export const data : Song[] = [
         id : 2,
        },
        {
-        image : "https://seed-mix-image.spotifycdn.com/v6/img/artist/4k9wp4ipHdA1bu1T4x1ZTG/en/default",
-        title :"IV of Spades Mix",
-        artist :"Ben&Ben",
+        image : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+        title :"Mix 2",
+        artist :"Ben&Be",
         id : 3,
        },
        {
-        image : "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb4bdb3888818637acb71c4a13/1/en/default",
-        title :"Daily Mix 1",
+        image : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+        title :"Mix 1",
         artist :"Ben&Ben",
         id : 4,
        },
        {
-        image : "https://seed-mix-image.spotifycdn.com/v6/img/chill/3l0CmX0FuQjFxr8SK7Vqag/en/default",
-        title :"Daily Mix 4",
-        artist :"The Rare Occasions, The Neighbourhood, My Chemical Romance and more",
+        image : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+        title :"Kathang Isip",
+        artist :"Ben&Ben",
         id : 5,
        },
        {
-        image : "https://seed-mix-image.spotifycdn.com/v6/img/artist/4DAcJXcjX0zlQAZAPAx4Zb/en/default",
-        title :"Ben&Ben Mix",
+        image : "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
+        title :"Kathang Isip",
         artist :"Ben&Ben",
         id : 6,
-       },
-       {
-        image : "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb61916bb9f5c6a1a9ba1c9ab6/5/en/default",
-        title :"Daily Mix 5",
-        artist :"Ben&Ben",
-        id : 7,
-       },
-       {
-        image : "https://seed-mix-image.spotifycdn.com/v6/img/artist/61nn6nOoLWjVC1ER2qFAvN/en/default",
-        title :"Cup of Joe Mix",
-        artist :"TONEEJAY, Ben&Ben and mrld",
-        id : 8,
        },
    ]
  

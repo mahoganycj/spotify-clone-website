@@ -1,29 +1,20 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
-import Sidebar from "./components/SideBar";
-import Header from "./components/Header";
-import ThinCard from "./components/Cards/ThinCard";
-import { data } from "./components/data";
-import SongCard from "./components/Cards/SongCard";
+import React from "react";
+import Sidebar from "../components/SideBar";
+import Header from "../components/Header";
 
-const Home = () => {
+const Search = () => {
   return (
     <div className="w-full h-screen grid grid-cols-[max-content_auto] grid-rows-[5fr_1fr] gap-y-2 p-2 bg-black">
       <Sidebar />
-
       <div className="bg-secondary02 grid grid-cols-[1fr] overflow-hidden rounded-lg">
         <div className="overflow-y-auto">
           <div className="sticky top-0 h-20 w-full p-5 bg-black/50 z-10">
             <Header />
           </div>
-          <div className="flex justify-center items-center p-10">
-            Home Browse
-          </div>
-          <div className="bg-secondary02 sticky top-0 w-full p-5">
-            .Footer
-          </div>
+          <div className="flex justify-center items-center p-10">Search Browse</div>
+          <div className="bg-secondary02 sticky top-0 w-full p-5">.Footers</div>
         </div>
       </div>
 
@@ -31,6 +22,6 @@ const Home = () => {
       <div className="bg-slate-500">Player controls</div>
     </div>
   );
-}
+};
 
-export default Home;
+export default Search;

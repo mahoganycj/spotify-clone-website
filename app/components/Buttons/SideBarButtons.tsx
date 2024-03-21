@@ -1,15 +1,22 @@
-import React, { ElementType, ReactNode } from 'react'
+import { FlatButton } from "./FlatButton";
+import { ReactNode } from "react";
 
-type SideBarButtonsProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    label: string;
-    Icon: ElementType;
+type SideBarButtonsProps = {
+  icon: ReactNode;
+  label: string;
+  href: string;
+  active: boolean;
 }
 
-export const SideBarButtons = ({label, Icon, onClick, children, ...props}: SideBarButtonsProps) => {
+export const SideBarButtons = ({icon, label, href, active = false}: SideBarButtonsProps) => {
   return (
-    <button className="cursor-pointer select-none flex flex-row items-center space-x-[18px] text-md font-bold text-neutral02 hover:text-white fill-neutral02 hover:fill-white">
-        <Icon size={32}/>
-        <h1>{label}</h1>
-    </button>
-  ) 
-}
+  <FlatButton
+    href={href}
+    className={`flex gap-5 text-md font-bold text-neutral02 hover:text-white ${
+      active ? "text-white" : "text-neutral-400"
+    }`}
+  >
+    {icon}
+    {label}
+  </FlatButton>)
+};

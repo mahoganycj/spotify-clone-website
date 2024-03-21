@@ -10,7 +10,7 @@ import SongCard from "./components/Cards/SongCard";
 import Footer from "./components/Footer";
 import { data2 } from "./components/data2";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="w-full h-screen grid grid-cols-[max-content_auto] grid-rows-[5fr_1fr] gap-y-2 p-2 bg-black">
       <Sidebar />
@@ -111,4 +111,5 @@ export default function Home() {
     </div>
   );
 }
- 
+
+export default Home;

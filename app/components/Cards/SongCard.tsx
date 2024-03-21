@@ -87,3 +87,4 @@ const SongCard= ({image, title, artist, onClick} : SongCardProps) => {
 }
  
 export default SongCard;
+ 

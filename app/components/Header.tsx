@@ -1,7 +1,16 @@
 "use client";
+
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
-import { usePathname, useRouter } from "next/navigation";
+import {
+  useRouter,
+  usePathname,
+  useSearchParams,
+  useParams,
+} from "next/navigation";
 import { FaUserAlt } from "react-icons/fa";
+import { GoSearch } from "react-icons/go";
+import { authorize, getToken } from "../API/Authorize";
+import useRefreshToken from "../hooks/useRefreshToken";
 
 const Header = () => {
   const router = useRouter();
@@ -41,6 +50,16 @@ const Header = () => {
           >
             <RxCaretRight className="text-white" size={35} />
           </button>
+          <div className="absolute m-24">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-4 pointer-events-none">
+              <GoSearch />
+            </div>
+            <input
+              className="block p-4 ps-10 rounded-full px-5 py-4 bg-neutral-800 text-sm hover:bg-neutral-700 placeholder:text-sm w-60"
+              type="search"
+              placeholder="What do you want to play?"
+            />
+          </div>
         </div>
         <div className="flex justify-between items-center gap-x-4">
           {/* <div className="px-4 py-2 bg-white rounded-full hover:scale-105 text-sm">
@@ -110,6 +129,7 @@ const Header = () => {
       </div>
     </>
   ) : (
+    // HOME
     <>
       <div className="w-full mb-4 flex items-center justify-between">
         <div className="hidden md:flex gap-x-2 items-center">

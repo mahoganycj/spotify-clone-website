@@ -31,7 +31,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="flex relative overflow-y-hidden select-none">
+    <div className="hidden sm:flex relative overflow-y-hidden select-none">
       <aside
         style={{ width: `${width / 16}rem` }}
         className="relative flex flex-col gap-2"

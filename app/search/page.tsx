@@ -17,7 +17,6 @@ const Search = () => {
           <div className="bg-secondary02 sticky top-0 w-full p-5">.Footers</div>
         </div>
       </div>
-
       <div className="bg-slate-800">Song name</div>
       <div className="bg-slate-500">Player controls</div>
     </div>

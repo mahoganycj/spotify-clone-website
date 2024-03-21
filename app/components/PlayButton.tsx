@@ -12,7 +12,7 @@ const PlayButton = () => {
         justify-center 
         bg-green-500 
         p-4 
-        drop-shadow-md 
+        drop-shadow-xl
         translate
         translate-y-1/4
         group-hover:opacity-100 

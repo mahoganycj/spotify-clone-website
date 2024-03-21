@@ -33,8 +33,8 @@ const SongCard= ({image, title, artist, onClick} : SongCardProps) => {
         hover:bg-neutral-400/10 
         transition 
         p-3
-        h-[270px]
-        w-[210px]
+        md:[210px]
+        sm:[200px]
       "
     >
       <div 

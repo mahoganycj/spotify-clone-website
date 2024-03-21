@@ -15,22 +15,26 @@ type SongCardProps ={
 
 const SongCard= ({image, title, artist, onClick} : SongCardProps) => {
   return ( 
-    <div
+    <div className="mt-2">
+       <div
       className="
         relative 
         group 
         flex 
-        flex-col 
+        flex-col
+        flex-shrink 
         items-center 
         justify-center 
         rounded-md 
         overflow-hidden 
-        gap-x-4 
+        gap-x-4
         bg-neutral-400/5 
         cursor-pointer 
         hover:bg-neutral-400/10 
         transition 
         p-3
+        h-[270px]
+        w-[210px]
       "
     >
       <div 
@@ -63,7 +67,7 @@ const SongCard= ({image, title, artist, onClick} : SongCardProps) => {
             truncate
           "
         >
-          By {artist}
+        {artist}
         </p>
       </div>
       <div 
@@ -76,6 +80,9 @@ const SongCard= ({image, title, artist, onClick} : SongCardProps) => {
         <PlayButton  />
       </div>
     </div>
+      
+    </div>
+   
    );
 }
  

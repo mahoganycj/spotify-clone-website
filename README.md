@@ -1,5 +1,6 @@
 Figma Design Link:
 https://www.figma.com/file/7F1IxM4ezkTIfgUg3LRKRl/Spotify-Clone?type=design&node-id=0%3A1&mode=design&t=mofensaNKuG3nQcW-1
+
 Data Model
 https://lucid.app/lucidchart/invitations/accept/inv_37bbaa8f-730c-4a03-8a6f-3d95a35a7cb0
 

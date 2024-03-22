@@ -35,8 +35,9 @@ const ThinCard: React.FC<ThinCardProps> = ({
         cursor-pointer 
         hover:bg-neutral-100/20 
         transition
-        w-[259px]
         h-[48px]
+        sm:flex-grow
+        md:w-full
       "
     >
       <div className="relative min-h-[64px] min-w-[64px]">

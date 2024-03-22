@@ -3,8 +3,15 @@
 import React from "react";
 import Sidebar from "../components/SideBar";
 import Header from "../components/Header";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-const Search = () => {
+import { ICategory } from "../components/data2";
+import GenreCard from "../components/Cards/GenreCard";
+import YoumightAlsoLike from "../components/Cards/YoumightAlsoLike";
+
+const Search = ({ name, image, id }: ICategory) => {
   return (
     <div className="w-full h-screen grid grid-cols-[max-content_auto] grid-rows-[5fr_1fr] gap-y-2 p-2 bg-black">
       <Sidebar />
@@ -13,8 +20,11 @@ const Search = () => {
           <div className="sticky top-0 h-20 w-full p-5 bg-black/50 z-10">
             <Header />
           </div>
-          <div className="flex justify-center items-center p-10">Search Browse</div>
-          <div className="bg-secondary02 sticky top-0 w-full p-5">.Footers</div>
+          <div className="flex justify-center items-center p-5">
+            <div>
+           <GenreCard/>
+            </div>
+          </div>
         </div>
       </div>
       <div className="bg-slate-800">Song name</div>
@@ -24,3 +34,4 @@ const Search = () => {
 };
 
 export default Search;
+

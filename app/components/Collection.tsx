@@ -5,6 +5,7 @@ import { FaPlay } from "react-icons/fa";
 import SongRow from "./SongRow";
 import { Song } from "./data2";
 import Footer from "./Footer";
+import YoumightAlsoLike from "./Cards/YoumightAlsoLike";
 
 const Collection = () => {
   return (
@@ -69,8 +70,13 @@ const Collection = () => {
                 />
               );
             })}
+            <div>
+              <YoumightAlsoLike />
+            </div>
           </div>
-          <div className="mx-5">
+          <div className="h-16 py-16"></div>
+
+          <div className="mx-5 mt-16">
             <Footer />
           </div>
         </div>

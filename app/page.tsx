@@ -12,6 +12,7 @@ import { Song, data2 } from "./components/data2";
 import { Playlist } from "./playlist/page";
 import Collection from "./components/Collection";
 import Link from "next/link";
+import Music from "./components/Music";
 
 
 const Home = () => {
@@ -25,7 +26,7 @@ const Home = () => {
             <Header />
           </div>
           <div>
-          
+          <Music/>
             {/* <SongRow artist='Leandro' title='Leandro' album='Leandro' duration="100" image="https://i.scdn.co/image/ab67706f0000000281b1c03176a914df48d38319" /> */}
           </div>
           <div

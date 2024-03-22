@@ -102,12 +102,8 @@ const Home = () => {
            </div>
         </div>
         <div>
-          
         </div>
       </div>
-
-      <div className="bg-slate-800">Song name</div>
-      <div className="bg-slate-500">Player controls</div>
     </div>
   );
 }

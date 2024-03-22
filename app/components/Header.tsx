@@ -11,10 +11,15 @@ import { FaUserAlt } from "react-icons/fa";
 import { GoSearch } from "react-icons/go";
 import { authorize, getToken } from "../API/Authorize";
 import useRefreshToken from "../hooks/useRefreshToken";
+import Link from "next/link";
 
 const Header = () => {
   const router = useRouter();
   const pathname = usePathname();
+
+  const handleGoLogin = () => {
+    return (location.href = "/login");
+  };
 
   return pathname === "/search" ? (
     <>
@@ -211,6 +216,7 @@ const Header = () => {
           <div
             className="p-2 rounded-full bg-slate-800 hover:scale-105 text-sm cursor-pointer"
             title="Profile"
+            onClick={handleGoLogin}
           >
             <svg
               className="hover:white"

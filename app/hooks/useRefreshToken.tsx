@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from "react";
 import { getToken, refreshSpotifyToken } from "../API/Authorize";
 

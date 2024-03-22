@@ -34,6 +34,9 @@ const config: Config = {
         neutral02: "#777777",
         neutral03: "#535353",
         anothablack: "#181818",
+        brand: "#1ed760",
+        "accent-1": "#ae2997",
+        "accent-2": "#519af4",
       },
       screens: {
         'sm': '640px',

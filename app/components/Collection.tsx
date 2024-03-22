@@ -4,6 +4,7 @@ import { FaEllipsisH, FaHeart } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
 import SongRow from "./SongRow";
 import { Song } from "./data2";
+import Footer from "./Footer";
 
 const Collection = () => {
   return (
@@ -25,12 +26,12 @@ const Collection = () => {
             </p>
           </div>
         </div>
-            <div className="bg-black/70 ">
-        <div className="  py-5 px-5 my-6">
-          <div className="flex flex-row space-x-8 items-center align-middle mr-5  w-full">
-            <div>
-              <button
-                className="
+        <div className="bg-black/70 ">
+          <div className="  py-5 px-5 my-6">
+            <div className="flex flex-row space-x-8 items-center align-middle mr-5  w-full">
+              <div>
+                <button
+                  className="
               transition  
               rounded-full 
               items-center 
@@ -45,31 +46,33 @@ const Collection = () => {
               group-hover:translate-y-0
               hover:scale-110  
             "
-              >
-                <FaPlay className="text-black " />
-              </button>
-            </div>
-            <div className="flex self-end space-x-5">
-              <FaHeart fontSize="38px" className="" />
-              <FaEllipsisH fontSize="24px" />
+                >
+                  <FaPlay className="text-black " />
+                </button>
+              </div>
+              <div className="flex self-end space-x-5">
+                <FaHeart fontSize="38px" className="" />
+                <FaEllipsisH fontSize="24px" />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="pt-6  bg-black/60 w-full p-[30px] h-screen">
-          {Song.map((song) => {
-            return (
-              <SongRow
-                artist={song.artist}
-                album={song.album}
-                image={song.image}
-                duration={song.duration}
-                id={song.id}
-                title={song.title}
-              />
-              
-            );
-          })}
-        </div>
+          <div className="pt-6  bg-black/60 w-full p-[30px] h-screen">
+            {Song.map((song) => {
+              return (
+                <SongRow
+                  artist={song.artist}
+                  album={song.album}
+                  image={song.image}
+                  duration={song.duration}
+                  id={song.id}
+                  title={song.title}
+                />
+              );
+            })}
+          </div>
+          <div className="mx-5">
+            <Footer />
+          </div>
         </div>
       </div>
     </div>

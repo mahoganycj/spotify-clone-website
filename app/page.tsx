@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import { Song, data2 } from "./components/data2";
 import { Playlist } from "./playlist/page";
 import Collection from "./components/Collection";
+import Link from "next/link";
 
 
 const Home = () => {
@@ -46,7 +47,9 @@ const Home = () => {
           >
             {data.map((data) => {
               return (
-                <ThinCard key={data.id} image={data.image} title={data.title} />
+                <Link href={'/DetailPage'}>
+                  <ThinCard key={data.id} image={data.image} title={data.title} />
+                </Link>
               );
             })}
             

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import SideMenu from "./SideMenu";
 import { SideLibrary } from "./SideLibrary";
 
-const [minWidth, maxWidth, defaultWidth] = [275, 425, 350];
+const [minWidth, maxWidth, defaultWidth] = [295, 425, 300];
 
 const Sidebar = () => {
   const [width, setWidth] = useState(defaultWidth);
@@ -31,7 +31,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="flex relative overflow-y-hidden select-none">
+    <div className="hidden sm:flex relative overflow-y-hidden select-none">
       <aside
         style={{ width: `${width / 16}rem` }}
         className="relative flex flex-col gap-2"

@@ -38,3 +38,18 @@ body,
   background-color: #000000;
   color-scheme: dark;
 }
+
+.body::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.body__shuffle {
+  @apply text-[80px] ml-[50px] my-5 hover:transition-[100ms] hover:duration-[transform] hover:ease-[ease-in] hover:scale-[1.08];
+}
+
+.body__background {
+  @apply absolute opacity-40 h-4/5 w-4/5 bg-[black] right-0 top-[13vh];
+}
+
+
+

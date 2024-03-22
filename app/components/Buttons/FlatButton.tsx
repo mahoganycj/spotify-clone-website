@@ -3,8 +3,8 @@ import React, { ReactNode } from 'react'
 
 type FlatButtonProps = {
     type?: "submit" | "reset" | "button" | undefined
-    className?: string
-    href?: string
+    className?: string;
+    href?: string;
     children: ReactNode;
 }
 

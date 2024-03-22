@@ -8,7 +8,10 @@ import ThinCard from "./components/Cards/ThinCard";
 import { data } from "./components/data";
 import SongCard from "./components/Cards/SongCard";
 import Footer from "./components/Footer";
-import { data2 } from "./components/data2";
+import { Song, data2 } from "./components/data2";
+import { Playlist } from "./playlist/page";
+import Collection from "./components/Collection";
+
 
 const Home = () => {
   return (
@@ -20,8 +23,10 @@ const Home = () => {
           <div className="flex sticky top-0 h-20 w-full px-5 py-6 bg-black/50 z-10">
             <Header />
           </div>
-          {/* <div className="w-full bg-red-400 h-5"></div> */}
-          {/* <div className="flex flex-row flex-wrap items-center gap-2 px-5 pt-10"> */}
+          <div>
+          
+            {/* <SongRow artist='Leandro' title='Leandro' album='Leandro' duration="100" image="https://i.scdn.co/image/ab67706f0000000281b1c03176a914df48d38319" /> */}
+          </div>
           <div
             className="
         grid 
@@ -32,7 +37,6 @@ const Home = () => {
         xl:grid-cols-4 
         2xl:grid-cols-5
         gap-2
-      
         items-center
         pt-10
         md:grow
@@ -41,8 +45,11 @@ const Home = () => {
         px-5"
           >
             {data.map((data) => {
-              return <ThinCard key={data.id} image={data.image} title={data.title} />;
+              return (
+                <ThinCard key={data.id} image={data.image} title={data.title} />
+              );
             })}
+            
           </div>
           <div className="px-5 pt-10 flex justify-between">
             <h3 className="text-[28px] font-bold hover:underline">
@@ -50,7 +57,6 @@ const Home = () => {
             </h3>
             <h4 className="self-end">Show all</h4>
           </div>
-
           <div
             className="
         grid 
@@ -67,7 +73,7 @@ const Home = () => {
             {data2.map((data) => {
               return (
                 <SongCard
-                key={data.id}
+                  key={data.id}
                   image={data.image}
                   title={data.title}
                   artist={data.artist}
@@ -96,7 +102,7 @@ const Home = () => {
             {data2.map((data) => {
               return (
                 <SongCard
-                key={data.id}
+                  key={data.id}
                   image={data.image}
                   title={data.title}
                   artist={data.artist}
@@ -125,7 +131,7 @@ const Home = () => {
             {data2.map((data) => {
               return (
                 <SongCard
-                key={data.id}
+                  key={data.id}
                   image={data.image}
                   title={data.title}
                   artist={data.artist}
@@ -154,7 +160,7 @@ const Home = () => {
             {data2.map((data) => {
               return (
                 <SongCard
-                key={data.id}
+                  key={data.id}
                   image={data.image}
                   title={data.title}
                   artist={data.artist}
@@ -183,7 +189,7 @@ const Home = () => {
             {data2.map((data) => {
               return (
                 <SongCard
-                key={data.id}
+                  key={data.id}
                   image={data.image}
                   title={data.title}
                   artist={data.artist}

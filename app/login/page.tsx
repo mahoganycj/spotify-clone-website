@@ -1,8 +1,8 @@
 "use client";
-import { useParams, useRouter } from "next/navigation";
-import React from "react";
-import useRefreshToken from "../hooks/useRefreshToken";
-import Logo from "../components/Logo";
+
+import { useParams, useRouter, useSearchParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import Logo from "../components/Icons/LogoSpotify";
 import ThirdPartyAuthButton from "../components/Buttons/ThirdPartyAuthButton";
 import {
   faApple,
@@ -10,7 +10,6 @@ import {
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-import { authorize } from "../API/Authorize";
 
 const authProviders = [
   {
@@ -29,8 +28,6 @@ const authProviders = [
 
 const Login = () => {
   const router = useRouter();
-  const { code } = useParams();
-  useRefreshToken(code as string);
 
   return (
     <div className="h-screen flex flex-col font-body bg-black md:bg-gradient-to-b md:from-zinc-900 md:to-black overflow-auto">
@@ -66,7 +63,6 @@ const Login = () => {
             <Link href={"/"} />;
           }}
         >
-
           <div className="flex flex-col gap-2">
             <label htmlFor="username" className="text-sm font-extrabold">
               Email or username
@@ -93,9 +89,8 @@ const Login = () => {
             />
           </div>
 
-          <button className="mt-5 py-3 bg-brand rounded-full" onClick={authorize}>
-            Log In
-          </button>
+          <Link className="mt-5 py-3 bg-brand rounded-full text-center hover:bg-green-600" href={"/"} >Log In</Link>
+          
         </form>
 
         <div className="flex flex-col gap-5 items-center text-center">

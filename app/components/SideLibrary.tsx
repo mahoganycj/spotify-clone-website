@@ -1,20 +1,20 @@
 import React from "react";
 import { CircularButtons } from "./Buttons/CircularButton";
 import { FaArrowRight, FaGlobe, FaPlus } from "react-icons/fa";
-import { LibraryIcon } from "../libs/LibraryIcon";
 import { SectionContainer } from "./SectionContainer";
 import { RoundedButton } from "./Buttons/RoundedButton";
 import { FlatButton } from "./Buttons/FlatButton";
 import { BorderedButton } from "./Buttons/BorderedButton";
 import { VerticalCard } from "./Cards/VerticalCard";
 import { SecondaryButton } from "./Buttons/SecondaryButton";
+import FillLibraryIcon from "./Icons/FillLibraryIcon";
 
 export const SideLibrary = () => {
   return (
     <SectionContainer className="h-full justify-stretch items-stretch">
       <div className="relative flex justify-between items-center px-5 py-4 shadow-lg shadow-neutral-950">
         <RoundedButton className="flex gap-3 items-center px-2 py-1 font-bold text-neutral02 hover:text-white transition-colors duration-300 fill-neutral02 hover:fill-white">
-          {<LibraryIcon />}
+          {<FillLibraryIcon />}
           Your Library
         </RoundedButton>
         <div className="flex flex-row gap-2">

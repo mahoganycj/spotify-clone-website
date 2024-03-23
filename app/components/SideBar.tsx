@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import SideMenu from "./SideMenu";
@@ -38,12 +38,11 @@ const Sidebar = () => {
       >
         <SideMenu />
         <SideLibrary />
-
       </aside>
 
       {/* Handle */}
       <div
-        className="w-2 bg-transparent cursor-col-resize"
+        className="w-1 bg-transparent cursor-col-resize hover:bg-slate-300 rounded-xl mx-0.5"
         onMouseDown={() => {
           isResized.current = true;
         }}

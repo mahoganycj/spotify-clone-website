@@ -1,20 +1,18 @@
 'user client'
 import React from "react";
-import { data } from "./data";
-import { Song } from "./data";
 import PlaylistGrid from "./PlaylistGrid";
 import { FlatButton } from "./Buttons/FlatButton";
 import { FaEllipsisH, FaEllipsisV, FaPlay } from "react-icons/fa";
 import Link from "next/link";
-import { SongRowProps } from "./data2";
+import { SongRowProps } from "../libs/data2";
 
 const SongRow = ({
+  id,
   artist,
   title,
   album,
   duration,
   image,
-  id,
 }: SongRowProps) => {
   return (
     <div>

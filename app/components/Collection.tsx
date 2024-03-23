@@ -3,7 +3,7 @@ import PlayButton from "./PlayButton";
 import { FaEllipsisH, FaHeart } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
 import SongRow from "./SongRow";
-import { Song } from "./data2";
+import { Song } from "../libs/data2";
 import Footer from "./Footer";
 import YoumightAlsoLike from "./Cards/YoumightAlsoLike";
 

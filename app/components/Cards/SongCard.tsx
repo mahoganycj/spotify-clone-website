@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import PlayButton from "../PlayButton";
-import { Song } from "../data";
 
 
 type SongCardProps ={

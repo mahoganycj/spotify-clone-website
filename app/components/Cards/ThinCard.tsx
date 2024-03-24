@@ -3,24 +3,18 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FaPlay } from "react-icons/fa";
+import Link from "next/link";
+import { SongList } from "@/app/libs/type";
 
 
-type ThinCardProps = {
-  image: string;
-  title : string;
-  artist? : string;
-  id ?: number;
-  href?: string;
-}
 
-const ThinCard: React.FC<ThinCardProps> = ({
-  image,
-  title,
-  href,
-}) => {
+const ThinCard = ({image, id, title} : SongList) => {
   const router = useRouter();
-
+  console.log({image})
+  
   return ( 
+    <Link href={`/playlist/${id}`} key={id}>
+   
     <button
       className="
         relative 
@@ -72,6 +66,7 @@ const ThinCard: React.FC<ThinCardProps> = ({
         <FaPlay className="text-black " size={12}/>
       </div>
     </button>
+    </Link>
    );
 }
  

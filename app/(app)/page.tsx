@@ -30,10 +30,9 @@ const Home = () => {
         px-5"
       >
         {data.map((data) => {
-          return (
-            <Link href={"/playlist"}>
-              <ThinCard key={data.id} image={data.image} title={data.title} />
-            </Link>
+          return (     
+              <ThinCard key={data.id} id={data.id} image={data.image} title={data.title} />
+          
           );
         })}
       </div>

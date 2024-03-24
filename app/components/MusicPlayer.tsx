@@ -17,9 +17,9 @@ const MusicPlayer = () => {
         </div>
 
         <div className='flex items-center justify-center gap-2'>
-            <p className='select-none text-xs font-thin'>0:00</p>
+            <p className='select-none text-sm font-normal'>0:00</p>
             <div className='rounded-full w-full h-1 bg-neutral-500'></div>
-            <p className='select-none text-xs font-thin'>0:00</p>
+            <p className='select-none text-sm font-normal'>0:00</p>
         </div>
     </div>
   )

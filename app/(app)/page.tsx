@@ -14,7 +14,8 @@ const Home = () => {
       </div>
       <div
         className="
-        grid 
+        hidden
+        lg:grid 
         grid-cols-2
         sm:grid-cols-2 
         md:grid-cols-2
@@ -38,10 +39,10 @@ const Home = () => {
         })}
       </div>
       <div className="px-5 pt-10 flex justify-between">
-        <h3 className="text-[28px] font-bold hover:underline">
-          Made For LeannotFound
+        <h3 className="text-3xl font-bold hover:underline">
+          Made For Lean
         </h3>
-        <h4 className="self-end">Show all</h4>
+        <h3 className="text-xs lg:text-sm self-end">Show all</h3>
       </div>
       <div
         className="
@@ -71,7 +72,7 @@ const Home = () => {
         <h3 className="text-[28px] font-bold hover:underline ">
           Recently played
         </h3>
-        <h4 className="self-end">Show all</h4>
+        <h4 className="text-xs lg:text-sm self-end">Show all</h4>
       </div>
 
       <div
@@ -98,7 +99,7 @@ const Home = () => {
       </div>
       <div className="px-5 pt-10 flex justify-between">
         <h3 className="text-[28px] font-bold hover:underline ">Your top mix</h3>
-        <h4 className="self-end">Show all</h4>
+        <h4 className="text-xs lg:text-sm self-end">Show all</h4>
       </div>
 
       <div
@@ -127,7 +128,7 @@ const Home = () => {
         <h3 className="text-[28px] font-bold hover:underline ">
           Editor's Picks
         </h3>
-        <h4 className="self-end">Show all</h4>
+        <h4 className="text-xs lg:text-sm self-end">Show all</h4>
       </div>
 
       <div
@@ -153,10 +154,10 @@ const Home = () => {
         })}
       </div>
       <div className="px-5 pt-10 flex justify-between">
-        <h3 className="text-[28px] font-bold hover:underline ">
+        <h3 className="text-[28px] font-bold hover:underline">
           Today's Biggest hits
         </h3>
-        <h4 className="self-end">Show all</h4>
+        <h4 className="text-xs lg:text-sm self-end">Show all</h4>
       </div>
 
       <div

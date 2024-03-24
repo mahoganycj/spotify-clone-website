@@ -9,15 +9,18 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
         <Sidebar />
         <div className="bg-secondary02 grid grid-cols-[1fr] overflow-hidden rounded-lg">
           <div className="overflow-y-auto">
-            <div className="sticky top-0 h-20 w-full p-5 bg-black/50 z-10">
+            <div className="sticky top-0 h-20 w-full p-5 bg-black/20 z-10">
               <Header />
             </div>
             {children}
-            <div className="px-5 py-5">
+            <div className="statice bottom-0 py-14 mt-28 p-5 pt-12">
               <Footer />
             </div>
+          
           </div>
+        
         </div>
+        
         <div className="bg-blue-500"></div>
         <div className="bg-slate-500"></div>
       </div>

@@ -4,7 +4,7 @@ import PlaylistGrid from "./PlaylistGrid";
 import { FlatButton } from "./Buttons/FlatButton";
 import { FaEllipsisH, FaEllipsisV, FaPlay } from "react-icons/fa";
 import Link from "next/link";
-import { SongRowProps } from "../libs/data2";
+import { SongRowProps } from "../libs/type";
 
 const SongRow = ({
   id,
@@ -16,11 +16,11 @@ const SongRow = ({
 }: SongRowProps) => {
   return (
     <div>
-      <PlaylistGrid className=" py-1 rounded-md hover:bg-neutral-700 items-center gap-x-2 [&:hover_.trackRow-number]:hidden [&:hover_.trackRow-playBtn]:block justify-between">
+      <PlaylistGrid className="group py-2 rounded-md hover:bg-neutral-700 items-center gap-x-2 justify-between">
         <div>
-          <span className="trackRow-number">{id}</span>
-          <FlatButton className="hidden trackRow-playBtn">
-            <FaPlay size="sm" />
+          <span className="group-hover:hidden block">{id}</span>
+          <FlatButton className="group-hover:block hidden">
+            <FaPlay size={18} />
           </FlatButton>
         </div>
         <div className="flex gap-3 overflow-hidden">
@@ -28,20 +28,20 @@ const SongRow = ({
           <div className="w-full">
             <Link
               href="#"
-              className="text-white max-w-[85%] overflow-hidden whitespace-nowrap text-ellipsis hover:underline hover:underline-offset-1"
+              className="text-white max-w-[85%] overflow-hidden whitespace-nowrap text-ellipsis hover:underline hover:underline-offset-1 text-md font-semibold"
             >
               {title}
             </Link>
-            <p className="text-sm">{artist}</p>
+            <p className="text-sm text-neutral01 group-hover:text-white">{artist}</p>
           </div>
         </div>
 
-        <div className="whitespace-nowrap overflow-hidden text-ellipsis">
+        <div className="whitespace-nowrap overflow-hidden text-ellipsis text-neutral01 group-hover:text-white">
           {album}
         </div>
 
         <div>
-          <div className="flex flex-row items-center space-x-3 justify-end">
+          <div className="flex flex-row items-center space-x-3 justify-end text-neutral01 group-hover:text-white">
             <text className="ml-5">{duration}</text>
             <FaEllipsisH />
           </div>

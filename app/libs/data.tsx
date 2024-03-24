@@ -1,4 +1,4 @@
-import { SongList, Mix, Category, SongRowProps } from "./type";
+import { SongList, Mix, Category, SongRowProps, GenreProps } from "./type";
 
 export const data: SongList[] = [
   {
@@ -315,3 +315,109 @@ export const Song: SongRowProps[] = [
     duration: "3:08",
   },
 ];
+
+
+export const GenreData : GenreProps[] =[
+  {
+    classname : "bg-genre-04-pink",
+    children : <h2>Music</h2>,
+    image : 'https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb',
+
+  },
+  {
+    classname : "bg-genre-03-green",
+    children : <h2>Podcast</h2>,
+    image : 'https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa',
+
+  },
+  {
+    classname : "bg-genre-08-blue",
+    children : <h2>Live Events</h2>,
+    image : 'https://concerts.spotifycdn.com/images/live-events_category-image.jpg',
+
+  },
+  {
+    classname : "bg-genre-07-purple",
+    children : <h2>Made For You</h2>,
+    image : 'https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe',
+
+  },
+  {
+    classname : "bg-genre-10-red",
+    children : <h2>New Release</h2>,
+    image : 'https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112',
+
+  },
+  {
+    classname : "bg-genre-09-orange",
+    children : <h2>OPM</h2>,
+    image : 'https://i.scdn.co/image/ab67fb8200005caff1c44c2b801af93881139b32',
+
+  },
+  {
+    classname : "bg-genre-12-brown",
+    children : <h2>Pop</h2>,
+    image : 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
+
+  },
+  {
+    classname : "bg-genre-06-darkblue",
+    children : <h2>Hip-Hop</h2>,
+    image : 'https://i.scdn.co/image/ab67fb8200005caf9e3dea60be755ccd97b7351f',
+
+  },
+  {
+    classname : "bg-genre-12-brown",
+    children : <h2>K-pop</h2>,
+    image : 'https://i.scdn.co/image/ab67fb8200005caf013ee3c983e6f60bf28bad5a',
+
+  },
+  {
+    classname : "bg-genre-02-green",
+    children : <h2>Podcast Charts</h2>,
+    image : 'https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg',
+
+  },
+  {
+    classname : "bg-genre-10-red",
+    children : <h2>Pag-ibig</h2>,
+    image : 'https://i.scdn.co/image/ab6765630000ba8a08b5cb121b43a14c45ff65b9',
+
+  },
+  {
+    classname : "bg-genre-07-purple",
+    children : <h2>Video Podcast</h2>,
+    image : 'https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg',
+
+  },
+  {
+    classname : "bg-genre-01-green",
+    children : <h2>Charts</h2>,
+    image : 'https://i.scdn.co/image/ab6765630000ba8a215c59e66f1e7bc7b6b6b7e8',
+
+  }, {
+    classname : "bg-genre-10-red",
+    children : <h2>In the car</h2>,
+    image : 'https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112',
+
+  },
+  {
+    classname : "bg-genre-09-orange",
+    children : <h2>Chill</h2>,
+    image : 'https://i.scdn.co/image/ab67fb8200005caff1c44c2b801af93881139b32',
+
+  },
+  {
+    classname : "bg-genre-12-brown",
+    children : <h2>R&B</h2>,
+    image : 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
+
+  },
+  {
+    classname : "bg-genre-06-darkblue",
+    children : <h2>At Home</h2>,
+    image : 'https://i.scdn.co/image/ab67fb8200005caf9e3dea60be755ccd97b7351f',
+
+  },
+]
+

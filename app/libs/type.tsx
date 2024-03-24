@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type SongList = {
     image: string;
     title: string;
@@ -26,3 +28,10 @@ export type Category = {
     duration: string;
     id?: number;
   };
+
+  export type GenreProps = {
+    classname: string;
+    children: ReactNode;
+    image: string;
+  };
+  

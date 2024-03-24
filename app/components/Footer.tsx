@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="">
-      <div className="flex justify-between">
+      <div className="flex flex-col justify-between lg:flex-row gap-5">
         <div>
           <h3>Company</h3>
           <h4>About</h4>

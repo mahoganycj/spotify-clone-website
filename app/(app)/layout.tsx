@@ -11,9 +11,13 @@ import VolumeIcon from "../components/Icons/VolumeIcon";
 import { CgMiniPlayer } from "react-icons/cg";
 import ZoomIcon from "../components/Icons/ZoomIcon";
 import BigDipperIcon from "../components/Icons/BigDipperIcon";
-import { IoClose, IoCloseOutline } from "react-icons/io5";
 import LeftSidebar from "../components/LeftSideBar";
 import RightSidebar from "../components/RightSideBar";
+import { GoHomeFill, GoSearch } from "react-icons/go";
+import FillLibraryIcon from "../components/Icons/FillLibraryIcon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpotify } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
   const [active, setActive] = useState(false);
@@ -22,39 +26,63 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
   };
   return (
     <>
-      <div className="w-full h-screen grid grid-cols-[auto_1fr_auto] grid-rows-[7fr_1fr] gap-y-2 p-2 bg-black">
+      <div className="w-full h-screen grid grid-cols-1 lg:grid-cols-[auto_1fr_auto]  grid-rows-1 gap-y-2 p-2 bg-black lg:grid-rows-[9fr_1fr]">
         <LeftSidebar />
+
         <div
           className={`bg-secondary02 grid grid-cols-[1fr] overflow-hidden rounded-lg ${
             active ? "" : "col-span-2"
           }`}
         >
-          <div className="overflow-y-auto">
-            <div className="sticky top-0 h-20 w-full p-5 bg-black/20 z-10">
+          <div className="overflow-x-hidden lg:overflow-y-auto">
+            <div className="hidden lg:flex sticky top-0 h-20 w-full p-5 bg-black/20 z-10">
               <Header />
             </div>
             {children}
             <div className="statice bottom-0 py-14 mt-28 p-5 pt-12">
               <Footer />
             </div>
-          
           </div>
-        
         </div>
+
         <RightSidebar
           passedValue={active}
           updateValue={(newValue) => setActive(newValue)}
         />
-        <div className="fixed bottom-0 left-0 right-0 z-10 h-28 grid grid-cols-4 p-2">
+
+        <div className="flex flex-row justify-center items-center gap-7 p-5 lg:hidden md:gap-20">
+          <Link href={'/'} className="flex flex-col items-center text-xs">
+            <GoHomeFill size={28} className="fill-neutral01" />
+            Home
+          </Link>
+          <Link href={'/search'} className="flex flex-col items-center text-xs">
+            <GoSearch size={28} className="fill-neutral01" />
+            Search
+          </Link>
+          <Link href={'/playlist'} className="flex flex-col items-center text-xs">
+            <div className="fill-neutral01 scale-75">
+              <FillLibraryIcon />
+            </div>
+            <span className="">Your Library</span>
+          </Link>
+          <Link href={'/'} className="flex flex-col items-center text-xs gap-1">
+            <FontAwesomeIcon icon={faSpotify} size="2x" color="#B2B2B2" />
+            Get App
+          </Link>
+        </div>
+
+        <div className="hidden lg:grid fixed bottom-0 left-0 right-0 z-10 h-24 grid-cols-4 p-2">
           <div className="bg-black col-span-1 px-2 flex items-center">
             <NowPlayingTrack
               passedValue={active}
               updateValue={(newValue) => setActive(newValue)}
             />
           </div>
+
           <div className="bg-black col-span-2 flex items-center justify-center">
             <MusicPlayer />
           </div>
+
           <div className="bg-black col-span-1 px-2 flex items-center justify-end">
             <div className="w-full">
               <div className="flex items-center justify-center gap-2">

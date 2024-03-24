@@ -11,7 +11,7 @@ import { BsThreeDots } from "react-icons/bs";
 import DipperCard from "./Cards/DipperCard";
 import { BorderedButton } from "./Buttons/BorderedButton";
 
-const [minWidth, maxWidth, defaultWidth] = [295, 425, 425];
+const [minWidth, maxWidth, defaultWidth] = [398, 425, 425];
 
 type RightSideBarProps = {
   passedValue: boolean;
@@ -106,7 +106,7 @@ const RightSidebar = ({ passedValue, updateValue }: RightSideBarProps) => {
                     Follow
                   </BorderedButton>
                 </div>
-                <div className="font-semibold text-neutral01 text-sm">
+                <div className="hidden sm:flex font-semibold text-neutral01 text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. A,
                   eius?
                 </div>

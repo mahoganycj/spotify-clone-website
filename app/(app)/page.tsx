@@ -3,7 +3,7 @@
 import ThinCard from "../components/Cards/ThinCard";
 import { data } from "../libs/data";
 import SongCard from "../components/Cards/SongCard";
-import { data2 } from "../libs/data2";
+import { data2 } from "../libs/data";
 import Link from "next/link";
 
 const Home = () => {

@@ -1,12 +1,13 @@
 import React from 'react'
+import { data2 } from '@/app/libs/data';
 import SongCard from './SongCard';
-import { data2 } from '@/app/libs/data2';
+
 
 const YoumightAlsoLike = () => {
   return (
-    <div>
+    <>
       
-      <div className=" pt-10 flex justify-between">
+      <div className=" pt-5 flex justify-between">
             <h3 className="text-[28px] font-bold hover:underline">
              You might Also like
             </h3>
@@ -36,7 +37,7 @@ const YoumightAlsoLike = () => {
             })}
           </div>
 
-    </div>
+    </>
   )
 }
 

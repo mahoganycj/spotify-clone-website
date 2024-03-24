@@ -6,7 +6,7 @@ import { SideLibrary } from "./SideLibrary";
 
 const [minWidth, maxWidth, defaultWidth] = [295, 425, 300];
 
-const Sidebar = () => {
+const LeftSidebar = () => {
   const [width, setWidth] = useState(defaultWidth);
   const isResized = useRef(false);
 
@@ -51,4 +51,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default LeftSidebar;

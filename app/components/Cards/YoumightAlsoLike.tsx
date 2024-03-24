@@ -1,6 +1,6 @@
 import React from 'react'
-import { data2 } from '../data2';
 import SongCard from './SongCard';
+import { data2 } from '@/app/libs/data2';
 
 const YoumightAlsoLike = () => {
   return (

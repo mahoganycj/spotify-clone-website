@@ -30,12 +30,15 @@ export type Category = {
     image: string;
     duration: string;
     id?: number;
+    classname?:string;
+    classname2?:string;
   };
 
   export type GenreProps = {
     classname: string;
     children: ReactNode;
     image: string;
+    id : number;
   };
   
   export type ThinCardProps = {

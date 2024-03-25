@@ -1,9 +1,4 @@
 import React from 'react'
-import PlayButton from "./PlayButton";
-import { FaEllipsisH, FaHeart } from "react-icons/fa";
-import { FaPlay } from "react-icons/fa";
-import SongRow from "./SongRow";
-import { Song } from "./data2";
 import Footer from "./Footer";
 import YoumightAlsoLike from "./Cards/YoumightAlsoLike";
 
@@ -13,7 +8,7 @@ const Music = () => {
     <div className=" bg-black/60 w-full h-screen py-[100px]">
       <div className="flex items-end self-end ">
         <div className='h-7'></div>
-          <h1 className="text-8xl font-black sm:text-8xl">Music</h1>
+          <h2 className="text-8xl font-black sm:text-8xl">Music</h2>
       </div>
       <div className="bg-black/70 ">
         <div className="  py-5 px-5 my-6">

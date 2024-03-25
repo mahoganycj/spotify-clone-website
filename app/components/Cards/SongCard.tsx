@@ -3,20 +3,19 @@
 import Image from "next/image";
 import PlayButton from "../PlayButton";
 
-
-type SongCardProps ={
-    image: string;
-    title : string;
-    artist? : string;
-    id ?: number;
+type SongCardProps = {
+  image: string;
+  title: string;
+  artist?: string;
+  id?: number;
   onClick?: (id: string) => void;
-}
+};
 
-const SongCard= ({image, title, artist, onClick} : SongCardProps) => {
-  return ( 
+const SongCard = ({ image, title, artist, onClick }: SongCardProps) => {
+  return (
     <div className="mt-2">
-       <div
-      className="
+      <div
+        className="
         relative 
         group 
         flex 
@@ -35,9 +34,9 @@ const SongCard= ({image, title, artist, onClick} : SongCardProps) => {
         md:[210px]
         sm:[200px]
       "
-    >
-      <div 
-        className="
+      >
+        <div
+          className="
           relative 
           aspect-square 
           w-full
@@ -45,45 +44,35 @@ const SongCard= ({image, title, artist, onClick} : SongCardProps) => {
           rounded-md 
           overflow-hidden
         "
-      >
-        <Image
-          className="object-cover"
-          src={image}
-          fill
-          alt="Image"
-        />
-      </div>
-      <div className="flex flex-col items-start w-full pt-4 gap-y-1">
-        <p className="font-semibold truncate w-full">
-          {title}
-        </p>
-        <p 
-          className="
+        >
+          <Image className="object-cover" src={image} fill alt="Image" />
+        </div>
+        <div className="flex flex-col items-start w-full pt-4 gap-y-1">
+          <p className="font-semibold truncate w-full">{title}</p>
+          <p
+            className="
             text-neutral-400 
             text-sm 
             pb-4 
             w-full 
             truncate
           "
-        >
-        {artist}
-        </p>
-      </div>
-      <div 
-        className="
+          >
+            {artist}
+          </p>
+        </div>
+        <div
+          className="
           absolute 
           bottom-24 
           right-5
         "
-      >
-        <PlayButton  />
+        >
+          <PlayButton />
+        </div>
       </div>
     </div>
-      
-    </div>
-   
-   );
-}
- 
+  );
+};
+
 export default SongCard;
- 

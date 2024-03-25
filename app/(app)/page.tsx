@@ -24,7 +24,7 @@ const Home = () => {
         2xl:grid-cols-5
         gap-2
         items-center
-        pt-10
+        pt-32
         md:grow
         sm:grow
         mt-4

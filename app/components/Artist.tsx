@@ -1,10 +1,10 @@
-"use client";
+import React from 'react'
+import SongCard from './Cards/SongCard'
+import { ArtistCardProps } from '../libs/type'
+import PlayButton from './PlayButton'
+import Image from 'next/image'
 
-import Image from "next/image";
-import PlayButton from "../PlayButton";
-import { SongCardProps } from "@/app/libs/type";
-
-const SongCard = ({ image, title, artist, onClick }: SongCardProps) => {
+const ArtistCard = ({image, name, type}:ArtistCardProps) => {
   return (
     <div className="mt-2">
       <div
@@ -34,14 +34,14 @@ const SongCard = ({ image, title, artist, onClick }: SongCardProps) => {
           aspect-square 
           w-full
           h-full 
-          rounded-md 
+          rounded-full
           overflow-hidden
         "
         >
           <Image className="object-cover" src={image} fill alt="Image" />
         </div>
         <div className="flex flex-col items-start w-full pt-4 gap-y-1">
-          <p className="font-semibold truncate w-full">{title}</p>
+          <p className="font-semibold truncate w-full">{name}</p>
           <p
             className="
             text-neutral-400 
@@ -51,7 +51,7 @@ const SongCard = ({ image, title, artist, onClick }: SongCardProps) => {
             truncate
           "
           >
-            {artist}
+            {type}
           </p>
         </div>
         <div
@@ -65,7 +65,7 @@ const SongCard = ({ image, title, artist, onClick }: SongCardProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SongCard;
+export default ArtistCard

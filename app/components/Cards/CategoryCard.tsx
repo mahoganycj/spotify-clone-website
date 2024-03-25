@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { ICategory } from "../../libs/data2";
+import { Category } from "@/app/libs/type";
 
 
 
 
-const CategoryCard = ({ name, image, id }: ICategory) => {
+const CategoryCard = ({ name, image, id }: Category) => {
 
 
   return (

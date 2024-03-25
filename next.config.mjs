@@ -24,6 +24,20 @@ const nextConfig = {
         protocol: "http",
         hostname: "localhost",
       },
+      {
+        protocol:"https",
+        hostname:"i2o.scdn.co",
+      },
+      {
+        protocol:"https",
+        hostname:"image-cdn-ak.spotifycdn.com"
+      },{
+        protocol:"https",
+        hostname:"scontent.fmnl25-4.fna.fbcdn.net"
+      },{
+        protocol:"https",
+        hostname:"scontent.fmnl25-5.fna.fbcdn.net"
+      }
     ],
   },
 };

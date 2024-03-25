@@ -34,13 +34,8 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
             active ? "" : "col-span-2"
           }`}
         >
-<<<<<<< Updated upstream
           <div className="overflow-x-hidden lg:overflow-y-auto">
             <div className="hidden lg:flex sticky top-0 h-20 w-full p-5 bg-black/20 z-50">
-=======
-          <div className="relative overflow-x-hidden lg:overflow-y-auto">
-            <div className="hidden lg:flex sticky-container absolute top-0 h-20 w-full p-5 bg-black/20 z-50">
->>>>>>> Stashed changes
               <Header />
             </div>
             {children}

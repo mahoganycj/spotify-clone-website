@@ -1,10 +1,11 @@
 "use client";
 
 import ThinCard from "../components/Cards/ThinCard";
-import { data } from "../libs/data";
+import { ArtistCardData, data } from "../libs/data";
 import SongCard from "../components/Cards/SongCard";
 import { data2 } from "../libs/data";
 import Link from "next/link";
+import ArtistCard from "../components/Artist";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <div>
         {/* <SongRow artist='Leandro' title='Leandro' album='Leandro' duration="100" image="https://i.scdn.co/image/ab67706f0000000281b1c03176a914df48d38319" /> */}
       </div>
+
       <div
         className="
         hidden
@@ -31,16 +33,18 @@ const Home = () => {
         px-5"
       >
         {data.map((data) => {
-          return (     
-              <ThinCard key={data.id} id={data.id} image={data.image} title={data.title} />
-          
+          return (
+            <ThinCard
+              key={data.id}
+              id={data.id}
+              image={data.image}
+              title={data.title}
+            />
           );
         })}
       </div>
       <div className="px-5 pt-10 flex justify-between">
-        <h3 className="text-3xl font-bold hover:underline">
-          Made For Lean
-        </h3>
+        <h3 className="text-3xl font-bold hover:underline">Made For Lean</h3>
         <h3 className="text-xs lg:text-sm self-end">Show all</h3>
       </div>
       <div
@@ -63,6 +67,32 @@ const Home = () => {
               image={data.image}
               title={data.title}
               artist={data.artist}
+            />
+          );
+        })}
+      </div>
+      <div className=" pt-5 px-5 flex justify-between">
+        <h3 className="text-[28px] font-bold hover:underline">Artists</h3>
+      </div>
+      <div
+        className="
+                grid 
+                grid-cols-2 
+                sm:grid-cols-3 
+                md:grid-cols-3 
+                lg:grid-cols-4 
+                xl:grid-cols-5 
+                2xl:grid-cols-8 
+                gap-1
+                px-5
+            "
+      >
+        {ArtistCardData.map((artist) => {
+          return (
+            <ArtistCard
+              name={artist.name}
+              type={artist.type}
+              image={artist.image}
             />
           );
         })}

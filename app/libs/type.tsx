@@ -49,4 +49,18 @@ export type Category = {
     href?: string;
     count : number;
   }
+  export type SongCardProps = {
+    image: string;
+    title?: string;
+    artist?: string;
+    id?: number;
+    onClick?: (id: string) => void;
+  };
+
+export type ArtistCardProps ={
+  image:string;
+  name:string;
+  type:string;
+  id?:number;
+}
   

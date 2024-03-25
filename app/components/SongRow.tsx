@@ -13,12 +13,14 @@ const SongRow = ({
   album,
   duration,
   image,
+  classname2,
+  classname,
 }: SongRowProps) => {
   return (
     <div>
       <PlaylistGrid className="group py-2 rounded-md hover:bg-neutral-700 items-center gap-x-2 justify-between">
         <div>
-          <span className="group-hover:hidden block">{id}</span>
+          <span className={`group-hover:hidden block ${classname}`}>{id}</span>
           <FlatButton className="group-hover:block hidden">
             <FaPlay size={18} />
           </FlatButton>
@@ -28,7 +30,7 @@ const SongRow = ({
           <div className="w-full">
             <Link
               href="#"
-              className="text-white max-w-[85%] overflow-hidden whitespace-nowrap text-ellipsis hover:underline hover:underline-offset-1 text-md font-semibold"
+              className={`max-w-[85%] overflow-hidden whitespace-nowrap text-ellipsis hover:underline hover:underline-offset-1 text-md font-semibold ${classname2}`}
             >
               {title}
             </Link>

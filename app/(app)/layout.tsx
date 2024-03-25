@@ -35,7 +35,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
           }`}
         >
           <div className="overflow-x-hidden lg:overflow-y-auto">
-            <div className="hidden lg:flex sticky top-0 h-20 w-full p-5 bg-black/20 z-10">
+            <div className="hidden lg:flex sticky top-0 h-20 w-full p-5 bg-black/20 z-50">
               <Header />
             </div>
             {children}

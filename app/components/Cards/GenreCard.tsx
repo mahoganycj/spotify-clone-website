@@ -7,7 +7,7 @@ Genre;
 const GenreCard = () => {
   return (
     <div>
-      <h3 className="text-[28px] font-bold hover:underline">Search</h3>
+      <h3 className="text-[28px] font-bold hover:underline"></h3>
       <label
         htmlFor="email"
         className=" block relative text-gray-400 focus-within:text-gray-600 lg:hidden"
@@ -40,6 +40,7 @@ const GenreCard = () => {
               children={genre.children}
               classname={genre.classname}
               image={genre.image}
+              id={genre.id}
             />
           );
         })}

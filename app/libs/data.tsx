@@ -343,105 +343,176 @@ export const Song: SongRowProps[] = [
 
 export const GenreData : GenreProps[] =[
   {
-    classname : "bg-genre-04-pink",
+    classname : "bg-gradient-to-r from-pink-500 to-pink-800 ",
     children : <h2>Music</h2>,
     image : 'https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb',
+    id : 1,
 
   },
   {
-    classname : "bg-genre-03-green",
+    classname : "bg-gradient-to-r from-green-500 to-yellow-600 ",
     children : <h2>Podcast</h2>,
     image : 'https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa',
+    id : 2,
 
   },
   {
-    classname : "bg-genre-08-blue",
+    classname : "bg-gradient-to-r from-blue-700 to-orange-500 ",
     children : <h2>Live Events</h2>,
     image : 'https://concerts.spotifycdn.com/images/live-events_category-image.jpg',
-
+    id : 3,
   },
   {
-    classname : "bg-genre-07-purple",
+    classname : "bg-gradient-to-r from-purple-700 to-blue-600 ",
     children : <h2>Made For You</h2>,
     image : 'https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe',
-
+    id : 4,
   },
   {
-    classname : "bg-genre-10-red",
+    classname : "bg-gradient-to-r from-red-800 to-orange-800 ",
     children : <h2>New Release</h2>,
     image : 'https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112',
-
+    id : 5,
   },
   {
     classname : "bg-genre-09-orange",
     children : <h2>OPM</h2>,
     image : 'https://i.scdn.co/image/ab67fb8200005caff1c44c2b801af93881139b32',
-
+    id : 6,
   },
   {
     classname : "bg-genre-12-brown",
     children : <h2>Pop</h2>,
     image : 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
-
+    id : 7,
   },
   {
     classname : "bg-genre-06-darkblue",
     children : <h2>Hip-Hop</h2>,
     image : 'https://i.scdn.co/image/ab67fb8200005caf9e3dea60be755ccd97b7351f',
-
+    id : 8,
   },
   {
     classname : "bg-genre-12-brown",
     children : <h2>K-pop</h2>,
     image : 'https://i.scdn.co/image/ab67fb8200005caf013ee3c983e6f60bf28bad5a',
-
+    id : 9,
   },
   {
     classname : "bg-genre-02-green",
     children : <h2>Podcast Charts</h2>,
     image : 'https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg',
-
+    id : 10,
   },
   {
     classname : "bg-genre-10-red",
     children : <h2>Pag-ibig</h2>,
     image : 'https://i.scdn.co/image/ab6765630000ba8a08b5cb121b43a14c45ff65b9',
-
+    id : 11,
   },
   {
     classname : "bg-genre-07-purple",
     children : <h2>Video Podcast</h2>,
     image : 'https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg',
-
+    id : 12,
   },
   {
     classname : "bg-genre-01-green",
     children : <h2>Charts</h2>,
     image : 'https://i.scdn.co/image/ab6765630000ba8a215c59e66f1e7bc7b6b6b7e8',
-
+    id : 13,
   }, {
     classname : "bg-genre-10-red",
     children : <h2>In the car</h2>,
     image : 'https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112',
-
+    id : 14,
   },
   {
     classname : "bg-genre-09-orange",
     children : <h2>Chill</h2>,
     image : 'https://i.scdn.co/image/ab67fb8200005caff1c44c2b801af93881139b32',
-
+    id : 15,
   },
   {
     classname : "bg-genre-12-brown",
     children : <h2>R&B</h2>,
     image : 'https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768',
-
+    id : 16,
   },
   {
     classname : "bg-genre-06-darkblue",
     children : <h2>At Home</h2>,
     image : 'https://i.scdn.co/image/ab67fb8200005caf9e3dea60be755ccd97b7351f',
-
+    id : 17,
   },
 ]
 
+
+export const queueSong : SongRowProps []=[
+  {
+    id: 1,
+    image: "https://i.scdn.co/image/ab67616d00001e0233c52ca8309741c6999ca742",
+    title: "A little Piece of Heaven",
+    artist: "Avenged Sevenfold",
+    album: "Paradise",
+    duration: "8:00",
+  },
+
+  {
+    id: 2,
+    image: "https://i.scdn.co/image/ab67706f0000000281b1c03176a914df48d38319",
+    title: "Hot Hits Philippines",
+    artist: "Silent Santuary, Parokya ni Edgar and mrld",
+    album: "Kalye",
+    duration: "3:45",
+  },
+
+  {
+    id: 3,
+    image:
+      "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb4bdb3888818637acb71c4a13/1/en/default",
+    title: "Daily Mix 1",
+    artist: "Cavetown",
+    album: "Animal Kingdom",
+    duration: "3:45",
+  },
+   {
+    id: 4,
+    image:
+      "https://seed-mix-image.spotifycdn.com/v6/img/artist/4DAcJXcjX0zlQAZAPAx4Zb/en/default",
+    title: "16 Mirrors",
+    artist: "Alex G",
+    album: "Trick",
+    duration: "3:20",
+  },
+  {
+    id: 5,
+    image:
+      "https://i.scdn.co/image/ab67616d00001e020990bdde089e517245a9d423",
+    title: "Inggit",
+    artist: "Skusta Clee",
+    album: "Skusta clee",
+    duration: "4:32",
+  },
+  {
+    id: 6,
+    image:
+      "https://i.scdn.co/image/ab67616d000048519c93931e7cfa4d8216056795",
+    title: "Vacation",
+    artist: "Young",
+    album: "Vibes",
+    duration: "4:32",
+  },
+ 
+
+  {
+    id: 7,
+    image:
+      "https://i.scdn.co/image/ab67616d00001e027300c1e7edcdbd15a42e1579",
+    title: "Sumugal",
+    artist: "Hev Abi",
+    album: "Kung Alam Mo Lang",
+    duration: "4:45",
+  },
+  
+]

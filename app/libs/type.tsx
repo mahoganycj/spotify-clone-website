@@ -6,6 +6,9 @@ export type SongList = {
     artist?: string;
     id?: number;
     href?: string;
+    count? : number;
+    type ?: string;
+    classname?:string;
   };
 
   export type Mix = {
@@ -34,4 +37,13 @@ export type Category = {
     children: ReactNode;
     image: string;
   };
+  
+  export type ThinCardProps = {
+    image: string;
+    title : string;
+    artist? : string;
+    id ?: number;
+    href?: string;
+    count : number;
+  }
   

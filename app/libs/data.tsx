@@ -7,26 +7,38 @@ export const data: SongList[] = [
       "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebef138aa4569dba63ee549997/2/en/default",
     title: "Cavetown Mix ",
     artist: "Sir Chloe, The walters and moriondo",
+    count : 20,
+    type : 'Mix',
+    classname : "bg-gradient-to-r from-red-800 to-orange-800 ",
   },
   {
     id: 2,
     image: "https://i.scdn.co/image/ab67706f0000000281b1c03176a914df48d38319",
     title: "Hot Hits Philippines",
-    artist: "Ben&Ben",
+    artist: "Best tracks from the world of OPM and pop. Cover: elijah woods",
+    count : 40,
+    type : 'Playlist',
+    classname : "bg-gradient-to-r from-yellow-900 to-orange-600 ",
   },
   {
     id: 3,
     image:
       "https://seed-mix-image.spotifycdn.com/v6/img/artist/4k9wp4ipHdA1bu1T4x1ZTG/en/default",
     title: "IV of Spades Mix",
-    artist: "Ben&Ben",
+    artist: "Ben&Ben, IV of Spades",
+    count : 60,
+    type : 'Mix',
+    classname : "bg-gradient-to-r from-red-900 to-yellow-600 ",
   },
   {
     id: 4,
     image:
       "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb4bdb3888818637acb71c4a13/1/en/default",
     title: "Daily Mix 1",
-    artist: "Ben&Ben",
+    artist: "Ben&Ben, Mart Anthony and JR",
+    count : 45,
+    type : 'Mix',
+    classname : "bg-gradient-to-r from-blue-600 to-purple-600 ",
   },
   {
     id: 5,
@@ -35,6 +47,9 @@ export const data: SongList[] = [
     title: "Daily Mix 4",
     artist:
       "The Rare Occasions, The Neighbourhood, My Chemical Romance and more",
+      count : 25,
+      type : 'Mix',
+      classname : "bg-gradient-to-r from-pink-800 to-pink-600 "
   },
   {
     id: 6,
@@ -42,6 +57,9 @@ export const data: SongList[] = [
       "https://seed-mix-image.spotifycdn.com/v6/img/artist/4DAcJXcjX0zlQAZAPAx4Zb/en/default",
     title: "Ben&Ben Mix",
     artist: "Ben&Ben",
+    count : 18,
+    type : 'Mix',
+    classname : "bg-gradient-to-r from-red-700 to-pink-500 "
   },
   {
     id: 7,
@@ -49,6 +67,9 @@ export const data: SongList[] = [
       "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb61916bb9f5c6a1a9ba1c9ab6/5/en/default",
     title: "Daily Mix 5",
     artist: "Ben&Ben",
+    count : 48,
+    type : 'Mix',
+    classname :"bg-gradient-to-r from-blue-600 to-purple-600 ",
   },
   {
     id: 8,
@@ -56,6 +77,9 @@ export const data: SongList[] = [
       "https://seed-mix-image.spotifycdn.com/v6/img/artist/61nn6nOoLWjVC1ER2qFAvN/en/default",
     title: "Cup of Joe Mix",
     artist: "TONEEJAY, Ben&Ben and mrld",
+    count : 60,
+    type : 'Mix',
+    classname :" bg-gradient-to-r from-red-600 to-blue-700 ",
   },
 ];
 

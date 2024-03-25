@@ -11,6 +11,7 @@ import { GoSearch } from "react-icons/go";
 import ArrowDownIcon from "./Icons/ArrowDownIcon";
 import NotifIcon from "./Icons/NotifIcon";
 import ProfileIcon from "./Icons/ProfileIcon";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   const router = useRouter();
@@ -23,6 +24,22 @@ const Header = () => {
   return pathname === "/search" ? (
     <>
       <div className="hidden lg:flex w-full mb-4 items-center justify-between">
+
+      <button
+          
+            className="
+            hidden
+        rounded-full 
+        bg-black
+        cursor-pointer 
+        hover:opacity-75 
+        transition
+      "
+          >
+            <RxHamburgerMenu className="text-white" size={35} />
+          </button>
+
+
         <div className="hidden md:flex gap-x-2 items-center">
           <button
             onClick={() => router.back()}
@@ -66,10 +83,8 @@ const Header = () => {
           </div>
         </div>
         <div className="flex justify-between items-center gap-x-4">
-          {/* <div className="px-4 py-2 bg-white rounded-full hover:scale-105 text-sm">
-            <h3 className="text-black font-medium">Explore Premium</h3>
-          </div> */}
-          <div className="flex px-4 py-2 rounded-full bg-slate-800 hover:scale-105 text-sm">
+      
+          <div className="flex px-4 py-2 rounded-full bg-black/90 hover:scale-105 text-sm">
             {/* arrow-down-icon */}
             <ArrowDownIcon />
 
@@ -79,18 +94,18 @@ const Header = () => {
           </div>
 
           <div
-            className="p-2 rounded-full bg-slate-800 hover:scale-105 text-sm cursor-pointer"
+            className="p-2 rounded-full  bg-black/80 hover:scale-105 text-sm cursor-pointer"
             title="What's New"
           >
             {/* NotifIcon */}
             <NotifIcon />
           </div>
           <div
-            className="p-2 rounded-full bg-slate-800 hover:scale-105 text-sm cursor-pointer"
+            className="p-2 rounded-full  bg-black/80 hover:scale-105 text-sm cursor-pointer"
             title="Profile"
           >
             {/* ProfileIcon */}
-            <ProfileIcon />
+            <div className="rounded-full"><img src="https://i.pinimg.com/736x/57/dd/7b/57dd7b5db7df3f7909f532c1897d43bf.jpg" height={24} width={24} className="rounded-full object-contain"/></div>
           </div>
         </div>
       </div>
@@ -150,13 +165,15 @@ const Header = () => {
           </div>
           <div
             className="p-2 rounded-full bg-slate-800 hover:scale-105 text-sm cursor-pointer"
+            
             title="Profile"
             onClick={handleGoLogin}
           >
-            <ProfileIcon />
+       <img src="https://i.pinimg.com/736x/57/dd/7b/57dd7b5db7df3f7909f532c1897d43bf.jpg" height={24} width={24} className="rounded-full object-contain"/>
+       </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 };
